@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000">
+
+    <ImageView
+        android:id="@+id/imageCircle2"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/shape2"
+        app:layout_constraintBottom_toBottomOf="@id/imageCircle"
+        app:layout_constraintEnd_toEndOf="@id/imageCircle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/imageCircle"
+        app:layout_constraintTop_toTopOf="@id/imageCircle"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <ImageView
+        android:id="@+id/imageCircle"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/shape"
+        app:layout_constraintBottom_toBottomOf="@id/imageSqure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="hh:mm:ss a"
+        android:format24Hour="hh:mm:ss"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageCircle"
+        app:layout_constraintEnd_toEndOf="@+id/imageCircle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageCircle"
+        app:layout_constraintTop_toTopOf="@+id/imageCircle"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageSqure"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/shapesqure"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCircle"
+        app:layout_constraintVertical_bias="0.92" />
+
+    <TextClock
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="yyyy-MM-dd"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSqure"
+        app:layout_constraintEnd_toEndOf="@+id/imageSqure"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageSqure"
+        app:layout_constraintTop_toTopOf="@+id/imageSqure"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
